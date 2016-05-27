@@ -8,7 +8,7 @@
 Author        : Hima KS 
 Name          : Priority Cliqk
 Description   : Automatically downloads , installs and updates applications in one click. Tested on all Debian distribtions.
-Last edited   : May16 2016
+Last edited   : May27 2016
 """
 
 
@@ -26,208 +26,408 @@ class Example(QtGui.QMainWindow):
     def __init__(self):
         super(Example, self).__init__()
         self.setWindowIcon(QtGui.QIcon('pr.jpeg'))
+        palette = QPalette()
+        palette.setBrush(QPalette.Background,QBrush(QPixmap("1.jpg")))
+        self.setPalette(palette)
         self.initUI()
         
     def initUI(self):      
 
         btn1 = QtGui.QPushButton("Chromium", self)
+        btn1.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn1.resize(200, 30)
         btn1.move(50, 30)
+
        
 
         btn2 = QtGui.QPushButton("Tor", self)
+        btn2.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn2.resize(200, 30)
         btn2.move(280, 30)
 
+
+
         btn3 = QtGui.QPushButton("Skype", self)
+        btn3.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn3.resize(200, 30)
         btn3.move(510, 30)
 
+
+
         btn4 = QtGui.QPushButton("Team Viewer", self)
+        btn4.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn4.resize(200, 30)
         btn4.move(740, 30)
 
+
+
         btn5 = QtGui.QPushButton("Adobe Flash Player", self)
+        btn5.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn5.resize(200, 30)
         btn5.move(970, 30)
 
+
+
         btn6 = QtGui.QPushButton("Notepad++", self)
+        btn6.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn6.resize(200, 30)
         btn6.move(50, 100)
 
+
+
         btn7 = QtGui.QPushButton("Sublime Text", self)
+        btn7.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn7.resize(200, 30)
         btn7.move(280, 100)
 
+
+
         btn8 = QtGui.QPushButton("Virtual Box", self)
+        btn8.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn8.resize(200, 30)
         btn8.move(510, 100)
 
+
+
         btn9 = QtGui.QPushButton("Unetbootin", self)
+        btn9.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn9.resize(200, 30)
         btn9.move(740, 100)
 
+
+
         btn10 = QtGui.QPushButton("Claws Mail Client", self)
+        btn10.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn10.resize(200, 30)
         btn10.move(970, 100)
 
+
+
         btn11 = QtGui.QPushButton("xChat-IRC", self)
+        btn11.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn11.resize(200, 30)
         btn11.move(50, 170)
 
+
+
         btn12 = QtGui.QPushButton("Libre Office", self)
+        btn12.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn12.resize(200, 30)
         btn12.move(280, 170)
 
+
+
         btn13 = QtGui.QPushButton("Audiocity", self)
+        btn13.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn13.resize(200, 30)
         btn13.move(510, 170)
 
+
+
         btn14 = QtGui.QPushButton("Pinta", self)
+        btn14.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn14.resize(200, 30)
         btn14.move(740, 170)
 
+
+
         btn15 = QtGui.QPushButton("Audacious", self)
+        btn15.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn15.resize(200, 30)
         btn15.move(970, 170)
 
+
+
         btn16 = QtGui.QPushButton("Amarok Player", self)
+        btn16.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn16.resize(200, 30)
         btn16.move(50, 240)
 
+
+
         btn17 = QtGui.QPushButton("VLC Video Player", self)
+        btn17.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn17.resize(200, 30)
         btn17.move(280, 240)
 
+
+
         btn18 = QtGui.QPushButton("Java JDK", self)
+        btn18.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn18.resize(200, 30)
         btn18.move(510, 240)
 
+
+
         btn19 = QtGui.QPushButton("Inkscape", self)
+        btn19.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn19.resize(200, 30)
         btn19.move(740, 240)
 
+
+
         btn20 = QtGui.QPushButton("Printer driver", self)
+        btn20.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn20.resize(200, 30)
         btn20.move(970, 240)
 
+
+
         btn21 = QtGui.QPushButton("Filezillia-ftp", self)
+        btn21.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn21.resize(200, 30)
         btn21.move(50, 310)
 
+
+
         btn22 = QtGui.QPushButton("Video Recorder", self)
+        btn22.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn22.resize(200, 30)
         btn22.move(280, 310)
 
+
+
         btn23 = QtGui.QPushButton("c Torrent", self)
+        btn23.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn23.resize(200, 30)
         btn23.move(510, 310)
 
+
+
         btn24 = QtGui.QPushButton(" Screen Recorder", self)
+        btn24.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn24.resize(200, 30)
         btn24.move(740, 310)
 
+
+
         btn25 = QtGui.QPushButton("WordPress", self)
+        btn25.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn25.resize(200, 30)
         btn25.move(970, 310)
 
+
+
         btn26 = QtGui.QPushButton("Eclipse", self)
+        btn26.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn26.resize(200, 30)
         btn26.move(50, 380)
 
+
+
         btn27 = QtGui.QPushButton("Pidgin-IM", self)
+        btn27.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn27.resize(200, 30)
         btn27.move(280, 380)
 
+
+
         btn28 = QtGui.QPushButton("qBittorrent", self)
+        btn28.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn28.resize(200, 30)
         btn28.move(510, 380)
 
+
+
         btn29 = QtGui.QPushButton("uget Downloader", self)
+        btn29.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn29.resize(200, 30)
         btn29.move(740, 380)
 
+
+
         btn30 = QtGui.QPushButton("Password Manager", self)
+        btn30.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn30.resize(200, 30)
         btn30.move(970, 380)
 
+
+
         btn31 = QtGui.QPushButton("gufw Firewall", self)
+        btn31.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn31.resize(200, 30)
         btn31.move(50, 440)
 
+
+
         btn32 = QtGui.QPushButton("Gimp", self)
+        btn32.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn32.resize(200, 30)
         btn32.move(280, 440)
 
+
+
         btn33 = QtGui.QPushButton("Backuppc", self)
+        btn33.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn33.resize(200, 30)
         btn33.move(510, 440)
 
+
+
         btn34 = QtGui.QPushButton("Kate", self)
+        btn34.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn34.resize(200, 30)
         btn34.move(740, 440)
 
+
+
         btn35 = QtGui.QPushButton("Deluge", self)
+        btn35.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn35.resize(200, 30)
         btn35.move(970, 440)
 
+
+
         btn36 = QtGui.QPushButton("Google Chrome", self)
+        btn36.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn36.resize(200, 30)
         btn36.move(50, 510)
 
+
+
         btn37 = QtGui.QPushButton("Rhythmbox", self)
+        btn37.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn37.resize(200, 30)
         btn37.move(280, 510)
 
+
+
         btn38 = QtGui.QPushButton("Dosbox", self)
+        btn38.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn38.resize(200, 30)
         btn38.move(510, 510)
 
+
+
         btn39 = QtGui.QPushButton("WPS Office", self)
+        btn39.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn39.resize(200, 30)
         btn39.move(740, 510)
 
+
+
         btn40 = QtGui.QPushButton("Callingra Office", self)
+        btn40.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn40.resize(200, 30)
         btn40.move(970, 510)
 
+
+
         btn41 = QtGui.QPushButton("Free Office", self)
+        btn41.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn41.resize(200, 30)
         btn41.move(50, 580)
 
+
+
         btn42 = QtGui.QPushButton("Synaptic", self)
+        btn42.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn42.resize(200, 30)
         btn42.move(280, 580)
 
+
+
         btn43 = QtGui.QPushButton("Kmail", self)
+        btn43.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn43.resize(200, 30)
         btn43.move(510, 580)
 
+
+
         btn44 = QtGui.QPushButton("Kopete", self)
+        btn44.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn44.resize(200, 30)
         btn44.move(740, 580)
 
+
+
         btn45 = QtGui.QPushButton("Emacs", self)
+        btn45.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn45.resize(200, 30)
         btn45.move(970, 580)
 
+
+
         btn46 = QtGui.QPushButton("Internet Explorer", self)
+        btn46.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn46.resize(200, 30)
         btn46.move(50, 650)
 
+
+
         btn47 = QtGui.QPushButton("Tuxpaint", self)
+        btn47.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn47.resize(200, 30)
         btn47.move(280, 650)
 
+
+
         btn48 = QtGui.QPushButton("kftpgrabber", self)
+        btn48.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn48.resize(200, 30)
         btn48.move(510, 650)
 
+
+
         btn49 = QtGui.QPushButton("Sonata", self)
+        btn49.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn49.resize(200, 30)
         btn49.move(740, 650)
 
+
+
         btn50 = QtGui.QPushButton("Joe", self)
+        btn50.setStyleSheet("background-color: rgb(51, 153, 255);\n"
+                                    "border:1px solid rgb(229, 255, 204);")
         btn50.resize(200, 30)
         btn50.move(970, 650)
 
