@@ -7,7 +7,7 @@
 """
 Author        : Hima KS 
 Name          : Priority Cliqk
-Description   : Automatically downloads , installs and updates applications in one click. Tested on all Debian distribtions.
+Description   : Automatically downloads , installs and updates applications in one click. Works on all Debian distribtions.
 Last edited   : May27 2016
 """
 
@@ -27,7 +27,7 @@ class Example(QtGui.QMainWindow):
         super(Example, self).__init__()
         self.setWindowIcon(QtGui.QIcon('pr.jpeg'))
         palette = QPalette()
-        palette.setBrush(QPalette.Background,QBrush(QPixmap("1.jpg")))
+        palette.setBrush(QPalette.Background,QBrush(QPixmap("wh.jpg")))
         self.setPalette(palette)
         self.initUI()
         
