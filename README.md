@@ -7,7 +7,7 @@ A relief to Debian users!! Priority Cliqk is a python script that downloads , in
 Make sure you have pyqt and python3 installed. 
 You can do this simply following the steps from this link
 
-http://exchangetimes.net/?tag=guide-to-install-pyqt-step-by-step-in-ubuntu-gnome-15-04#sthash.I31c68ZS.dpbs
+https://codesensitive.blogspot.in/2016/06/how-to-install-pyqt4-on-debianlinux.html
 
 #Step2
 Extract the downloaded zip file of Priority Cliqk in a folder. Open the terminal,  navigate to that folder and enter the following command 
